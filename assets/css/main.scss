@@ -232,10 +232,10 @@ html {
 }
 
 .segmentation-demo {
-  display: grid;
-  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.28rem;
-  align-items: start;
+  align-items: center;
   max-width: 72%;
   margin: 0.8rem auto 0.15rem;
 }
@@ -253,15 +253,20 @@ html {
   height: auto;
 }
 
+.segmentation-demo__pipeline {
+  flex: 0 0 calc(70.6% - 0.14rem);
+}
+
 .segmentation-demo__examples {
   display: grid;
+  flex: 0 0 calc(29.4% - 0.14rem);
   grid-template-columns: 1fr;
   gap: 0.28rem;
   margin-top: 0;
 }
 
 .segmentation-demo figcaption {
-  grid-column: 1 / -1;
+  flex: 0 0 100%;
   margin-top: 0.35rem;
   color: var(--global-text-color-light);
   font-size: 0.68rem;
