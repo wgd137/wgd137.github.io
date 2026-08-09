@@ -80,6 +80,10 @@ html {
   .sidebar {
     padding-right: 1.25rem;
   }
+
+  .sidebar .author__avatar img {
+    max-width: 200px;
+  }
 }
 
 .page__title {
