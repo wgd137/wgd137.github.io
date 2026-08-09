@@ -97,11 +97,11 @@ html {
 
   .sidebar p,
   .sidebar li {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 
   .sidebar .author__name {
-    font-size: 1.12rem;
+    font-size: 1.22rem;
   }
 }
 
@@ -144,7 +144,7 @@ html {
   max-width: 1280px;
   margin: 0 0 0.7rem !important;
   color: var(--profile-accent-strong);
-  font-size: clamp(1.2rem, 2vw, 1.45rem) !important;
+  font-size: clamp(1.35rem, 2vw, 1.6rem) !important;
   font-weight: 620;
   line-height: 1.48;
   letter-spacing: -0.018em;
@@ -155,7 +155,7 @@ html {
   z-index: 1;
   max-width: 1280px;
   margin-bottom: 0.9rem;
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   line-height: 1.72;
 }
 
@@ -353,7 +353,7 @@ html {
   padding: 0;
   border: 0;
   color: var(--profile-accent-strong);
-  font-size: 1.68rem;
+  font-size: 1.82rem;
   letter-spacing: -0.025em;
 }
 
@@ -380,14 +380,14 @@ html {
 
 .news-item time {
   color: var(--profile-accent);
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   font-weight: 750;
   letter-spacing: 0.025em;
 }
 
 .news-item p {
   margin: 0;
-  font-size: 1.02rem !important;
+  font-size: 1.14rem !important;
   line-height: 1.55;
 }
 
@@ -410,7 +410,7 @@ html {
 .page__content .research-theme__header h3 {
   margin: 0;
   color: var(--profile-accent-strong);
-  font-size: 1.26rem;
+  font-size: 1.4rem;
   line-height: 1.35;
 }
 
@@ -425,7 +425,7 @@ html {
 .research-theme__header > p {
   margin: 0;
   color: var(--global-text-color-light);
-  font-size: 0.94rem !important;
+  font-size: 1.05rem !important;
   line-height: 1.6;
 }
 
@@ -447,20 +447,20 @@ html {
 .page__content .research-project h4 {
   margin: 0 0 0.42rem;
   color: var(--profile-accent-strong);
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   line-height: 1.35;
 }
 
 .research-project > p {
   margin: 0 0 0.48rem;
-  font-size: 0.94rem !important;
+  font-size: 1.05rem !important;
   line-height: 1.6;
 }
 
 .page__content .research-methods {
   margin-bottom: 0;
   color: var(--global-text-color-light);
-  font-size: 0.84rem !important;
+  font-size: 0.94rem !important;
 }
 
 .publication-card {
@@ -475,7 +475,7 @@ html {
 
 .publication-card__year {
   color: var(--profile-accent);
-  font-size: 1.4rem;
+  font-size: 1.52rem;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -483,14 +483,14 @@ html {
 .page__content .publication-card h3 {
   margin: 0 0 0.55rem;
   color: var(--profile-accent-strong);
-  font-size: 1.15rem;
+  font-size: 1.28rem;
   line-height: 1.35;
 }
 
 .publication-card p {
   margin: 0;
   color: var(--global-text-color-light);
-  font-size: 0.92rem !important;
+  font-size: 1.03rem !important;
 }
 
 @media (max-width: 760px) {
