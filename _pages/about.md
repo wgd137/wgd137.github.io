@@ -12,7 +12,7 @@ redirect_from:
   <div class="profile-intro">
     <p class="profile-lede">He is a master's student at KTH and EURECOM, and a guest student with the Humanoid Sensing and Perception group at the Istituto Italiano di Tecnologia (IIT).</p>
     <p>At KTH, he is pursuing an M.Sc. in ICT Innovation: Autonomous Systems and Intelligent Robots (2025&ndash;Present). At EURECOM, he studies Sensing Big Data for Intelligent Robots (2026&ndash;Present). He received his B.Sc. in Building Electrical and Intelligence from Xi'an University of Architecture and Technology in 2025, graduating in the top 10%.</p>
-    <p>His research connects robot perception, multimodal learning, and data-driven modeling, with an emphasis on systems that remain useful outside carefully controlled environments&mdash;from animated visual content to humanoid teleoperation and physical-world forecasting.</p>
+    <p>His research interests span AI for Science (AI4S), physical intelligence, robot perception, and multimodal learning. Currently, Guandi Wang is focusing on generative intelligence for fluid physics and reinforcement learning in UAV aerodynamic environments.</p>
     <div class="profile-actions">
       <a class="profile-button profile-button--primary" href="{{ '/files/Guandi_Wang_CV.pdf' | relative_url }}"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV</a>
       <a class="profile-button" href="mailto:guandi@kth.se"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
