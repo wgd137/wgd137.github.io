@@ -80,7 +80,7 @@ redirect_from:
         </figure>
       </section>
 
-      <section class="research-theme">
+      <section class="research-theme research-theme--stacked">
         <header class="research-theme__header">
           <h3>Robot Perception &amp; Computer Vision</h3>
           <p>Robust visual understanding across sensing modalities, domains, and real-world operating conditions.</p>

@@ -403,6 +403,15 @@ html {
   padding-left: calc(37.5% + 0.6rem);
 }
 
+.research-theme--stacked .research-theme__header {
+  grid-template-columns: 1fr;
+  gap: 0.35rem;
+}
+
+.research-theme--stacked .research-theme__projects {
+  padding-left: 0;
+}
+
 .research-project {
   padding: 0;
 }
