@@ -71,9 +71,15 @@ html {
   letter-spacing: -0.02em;
 }
 
-.sidebar .author__urls li.author__desktop {
+.sidebar .author__urls li {
   white-space: normal;
   overflow-wrap: anywhere;
+}
+
+@media (min-width: 925px) {
+  .sidebar {
+    padding-right: 1.25rem;
+  }
 }
 
 .page__title {
@@ -83,7 +89,8 @@ html {
 }
 
 .profile-home {
-  max-width: 880px;
+  width: 100%;
+  max-width: 1060px;
   color: var(--global-text-color);
 }
 
@@ -95,8 +102,8 @@ html {
 
 .profile-intro {
   position: relative;
-  margin: 0.25rem 0 1.9rem;
-  padding: 0.25rem 0 1.15rem;
+  margin: 0.1rem 0 1.45rem;
+  padding: 0.1rem 0 0.85rem;
   background: transparent;
 }
 
@@ -111,7 +118,7 @@ html {
 }
 
 .profile-lede {
-  max-width: 760px;
+  max-width: 940px;
   margin: 0 0 0.7rem !important;
   color: var(--profile-accent-strong);
   font-size: clamp(1.08rem, 2vw, 1.3rem) !important;
@@ -123,7 +130,7 @@ html {
 .profile-intro > p:not(.profile-lede) {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 940px;
   margin-bottom: 0.9rem;
   line-height: 1.72;
 }
@@ -303,15 +310,15 @@ html {
 }
 
 .profile-section {
-  margin-top: 2.65rem;
+  margin-top: 2.25rem;
   scroll-margin-top: 5.5rem;
 }
 
 .profile-section__heading {
   display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.18rem;
   margin-bottom: 1rem;
   padding-bottom: 0.55rem;
   border-bottom: 1px solid var(--global-border-color);
