@@ -169,6 +169,8 @@ html {
 }
 
 .forewind-demo {
+  width: 100%;
+  max-width: 1200px;
   margin: 1.35rem 0 0.2rem;
 }
 
@@ -232,7 +234,16 @@ html {
 }
 
 .research-demo {
+  width: 100%;
   margin: 1.35rem 0 0.2rem;
+}
+
+.research-demo--forewind {
+  max-width: 960px;
+}
+
+.research-demo--bmvc {
+  max-width: 1280px;
 }
 
 .research-demo a {
@@ -267,7 +278,7 @@ html {
   flex-wrap: wrap;
   gap: 0.28rem;
   align-items: center;
-  max-width: 100%;
+  max-width: 1180px;
   margin: 0.8rem 0 0.15rem;
 }
 
