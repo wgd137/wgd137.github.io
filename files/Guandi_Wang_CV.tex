@@ -1,0 +1,126 @@
+\documentclass[10pt, letterpaper]{article}
+% Packages
+\usepackage[
+    ignoreheadfoot,
+    top=1.5cm, bottom=1.5cm, left=1.8cm, right=1.8cm,
+    footskip=0.8cm
+]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+% Colors & Fonts
+\definecolor{primaryColor}{RGB}{0, 0, 0} % Black for objectivity
+\urlstyle{same}
+% Formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0in}
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\begin{document}
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Guandi Wang} \\ \vspace{4pt}
+    \small
+    \faIcon{map-marker-alt} Stockholm, Sweden \quad
+    \faIcon{envelope} \href{mailto:guandi@kth.se}{guandi@kth.se} \quad
+    \faIcon{phone} +46 760219132 \quad
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/guandi-wang-w}{linkedin.com/in/guandi-wang-w}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\begin{itemize}
+  \resumeSubheading
+    {EURECOM}{Sophia Antipolis, France}
+    {M.Sc. in Sensing Big Data for Intelligent Robots}{July 2026 -- Present}
+  \resumeSubheading
+    {KTH Royal Institute of Technology}{Stockholm, Sweden}
+    {M.Sc. in ICT Innovation: Autonomous Systems and Intelligent Robots}{Aug. 2025 -- Present}
+    \resumeItem{Selected Coursework: Machine Learning, Distributed Artificial Intelligence, Introduction to Robotics, Hybrid and Embedd Control System.}
+  \resumeSubheading
+    {Xi'an University of Architecture and Technology}{Shaanxi, China}
+    {B.Sc. in Building Electrical and Intelligence}{Sep. 2021 -- July 2025}
+    \resumeItem{GPA: 83.5/100 (Top 10\%) $|$ \textbf{Technical Focus:} Control Theory, Power Engineering, Building Environment, Embedded Systems.}
+\end{itemize}
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    % --- IIT Guest Student ---
+    \resumeProjectHeading
+      {\textbf{Humanoid Sensing and Perception Guest Student} | Istituto Italiano di Tecnologia (IIT)}{June 2026 -- Present}
+      \resumeItem{\textbf{Supervisor:} Maria Lombardi \quad \textbf{PI:} Lorenzo Natale}
+      \resumeItem{\textbf{Unified Object Segmentation for Movies and Cartoons:} Developing a segmentation tool that unifies algorithms with heterogeneous input/output paradigms while addressing the domain gap between real footage and animated imagery.}
+      \resumeItem{Designing an intuitive, semi-automatic annotation workflow to make segmentation practical for non-specialists and robust across real movies and cartoons.}
+      \resumeItem{\textbf{R1 Humanoid Robot Teleoperation:} Contributing to a confidential VR-based teleoperation project involving C programming within the VR stack, YARP middleware, and LeRobot.}
+    % --- Tekniska Mekanik ---
+    \resumeProjectHeading
+      {\textbf{Research Intern} | Tekniska Mekanik, KTH Royal Institute of Technology}{Jun. 2025 -- Apr. 2026}
+      \resumeItem{Developed a high-resolution meteorological benchmark and data pipeline from ERA5 reanalysis data for spatio-temporal wind-speed forecasting on large grid datasets.}
+      \resumeItem{Evaluated deep-learning baselines on HPC clusters using Slurm, addressing long-range spatio-temporal dependencies and computational efficiency.}
+      \resumeItem{Fluid Reconstruction based on generative artificial intelligence.}
+ 
+    % --- Project 3: ROS2 Navigation (KTH Coursework) ---
+    \resumeProjectHeading
+      {\textbf{Autonomous Mobile Robot Navigation System} (Coursework) }{Sep. 2025 -- Dec. 2025}
+      \resumeItem{Architected a navigation stack for TurtleBot3 using \textbf{ROS2 (Foxy)} and Python. Migrated control logic from Finite State Machines to \textbf{Behavior Trees} for enhanced reactivity.}
+     
+      \resumeItem{Integrated AMCL for robust localization and tuned PID controllers for smooth trajectory tracking.}
+    % --- Project 4: Bachelor Thesis ---
+    \resumeProjectHeading
+      {\textbf{Photovoltaic Panel Defect Detection Algorithm} $|$ \emph{Bachelor Thesis}}{Jan. 2025 -- Jun. 2025}
+      \resumeItem{\textbf{Grand Prize}, Undergraduate Graduation Project Competition, Shaanxi Automation Association \hfill 2025.
+     }
+    
+  \end{itemize}
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItem{\textbf{Deep Multimodal Object Detection via Spatial Mask Interaction and Channel Competition.} Accepted to BMVC 2026.}
+  \end{itemize}
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python , C/C++, MATLAB, LaTeX} \\
+     \textbf{Frameworks \& Libraries}{: PyTorch, ROS2 (Foxy/Humble), OpenCV, Scikit-learn, YARP, LeRobot} \\
+     \textbf{Tools \& Platforms}{: Linux (Ubuntu), Git, Docker, Gazebo, Slurm (HPC), VR systems} \\
+  
+    }}
+ \end{itemize}
+%-----------AWARDS-----------
+\section{Selected Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+     \item{ \textbf{Outstanding Graduate}, Xi'an University of Architecture and Technology \hfill 2025}
+    \item{
+     \textbf{Academic Scholarship}, Class II, Awarded for 3 consecutive years \hfill 2021 -- 2023
+    }}
+   
+    
+ \end{itemize}
+\end{document}
