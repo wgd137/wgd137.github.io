@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                  : "en-US"
 site_theme              : "default"
-title                   : "Guandi Wang | Academic Profile"
+title                   : "Guandi Wang"
 title_separator         : "-"
 name                    : "Guandi Wang"
-description             : "Master's student at KTH and EURECOM focusing on Autonomous Systems and Intelligent Robots."
+description             : "Guandi Wang's academic homepage: robotics, multimodal perception, embodied AI, and spatio-temporal learning."
 url                     : "https://wgd137.github.io"
 baseurl                 : ""
 repository              : "wgd137/wgd137.github.io"
@@ -22,25 +22,25 @@ repository              : "wgd137/wgd137.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "guandi-wang.jpg"
+  name             : "Guandi Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "M.Sc. student at KTH & EURECOM · Guest Student at IIT"
+  location         : "Stockholm, Sweden"
+  employer         : "KTH Royal Institute of Technology"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "guandi@kth.se"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    :
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            :
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -50,13 +50,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "wgd137"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -65,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "guandi-wang-w"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

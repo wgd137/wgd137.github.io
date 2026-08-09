@@ -1,56 +1,173 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Guandi Wang"
+excerpt: "Robotics, multimodal perception, and embodied AI."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<div class="profile-home" id="about">
+  <div class="profile-intro">
+    <p class="profile-lede">He is a master's student at KTH and EURECOM, and a guest student with the Humanoid Sensing and Perception group at the Istituto Italiano di Tecnologia (IIT).</p>
+    <p>At KTH, he is pursuing an M.Sc. in ICT Innovation: Autonomous Systems and Intelligent Robots (2025&ndash;Present). At EURECOM, he studies Sensing Big Data for Intelligent Robots (2026&ndash;Present). He received his B.Sc. in Building Electrical and Intelligence from Xi'an University of Architecture and Technology in 2025, graduating in the top 10%.</p>
+    <p>His research connects robot perception, multimodal learning, and data-driven modeling, with an emphasis on systems that remain useful outside carefully controlled environments&mdash;from animated visual content to humanoid teleoperation and physical-world forecasting.</p>
+    <div class="profile-actions">
+      <a class="profile-button profile-button--primary" href="{{ '/files/Guandi_Wang_CV.pdf' | relative_url }}"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV</a>
+      <a class="profile-button" href="mailto:guandi@kth.se"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+      <a class="profile-button" href="https://github.com/wgd137"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+    </div>
+  </div>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+  <section class="profile-section" id="news">
+    <div class="profile-section__heading">
+      <p class="profile-section__eyebrow">Updates</p>
+      <h2>Latest News</h2>
+    </div>
+    <div class="news-list">
+      <article class="news-item">
+        <time datetime="2026-08">Aug. 2026</time>
+        <p><strong>BMVC 2026.</strong> A paper he co-authored, <em>Deep Multimodal Object Detection via Spatial Mask Interaction and Channel Competition</em>, has been accepted.</p>
+      </article>
+      <article class="news-item">
+        <time datetime="2026-06">June 2026</time>
+        <p><strong>IIT.</strong> He joined the <a href="https://www.iit.it/it/web/humanoid-sensing-and-perception">Humanoid Sensing and Perception</a> group as a guest student, supervised by Maria Lombardi and led by Lorenzo Natale.</p>
+      </article>
+      <article class="news-item">
+        <time datetime="2026-07">July 2026</time>
+        <p><strong>EURECOM.</strong> He started the M.Sc. programme in Sensing Big Data for Intelligent Robots.</p>
+      </article>
+      <article class="news-item">
+        <time datetime="2026-04">Apr. 2026</time>
+        <p><strong>PhyGeo-World.</strong> He is contributing to the NAISS-supported project on physics- and geometry-consistent world models for embodied AI.</p>
+      </article>
+    </div>
+  </section>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+  <section class="profile-section" id="research">
+    <div class="profile-section__heading">
+      <h2>Research</h2>
+    </div>
+    <div class="research-themes">
+      <section class="research-theme">
+        <header class="research-theme__header">
+          <h3>AI for Science <span>AI4S</span></h3>
+          <p>Data-driven methods for learning complex physical systems from large-scale scientific observations.</p>
+        </header>
+        <div class="research-theme__projects">
+          <article class="research-project">
+            <h4>ForeWind: Spatio-Temporal Wind Forecasting</h4>
+            <p>Built a high-resolution meteorological benchmark and large-scale ERA5 data pipeline, then evaluated deep learning baselines for wind-speed forecasting on HPC clusters.</p>
+            <p class="research-methods"><strong>Methods:</strong> ERA5, spatio-temporal learning, forecasting, Slurm.</p>
+          </article>
+        </div>
+        <figure class="forewind-demo" aria-labelledby="forewind-demo-title">
+          <div class="forewind-demo__header">
+            <div>
+              <p class="profile-section__eyebrow">ForeWind demo</p>
+              <h2 id="forewind-demo-title">Regional Wind Forecasting</h2>
+            </div>
+            <div class="forewind-demo__controls" role="group" aria-label="Select a ForeWind demo city">
+              <button type="button" class="is-active" aria-pressed="true" data-city="Shanghai" data-src="{{ '/images/forewind/shanghai-model-comparison.gif' | relative_url }}">Shanghai</button>
+              <button type="button" aria-pressed="false" data-city="Chengdu" data-src="{{ '/images/forewind/chengdu-model-comparison.gif' | relative_url }}">Chengdu</button>
+              <button type="button" aria-pressed="false" data-city="Golmud" data-src="{{ '/images/forewind/golmud-model-comparison.gif' | relative_url }}">Golmud</button>
+              <button type="button" aria-pressed="false" data-city="Wuhan" data-src="{{ '/images/forewind/wuhan-model-comparison.gif' | relative_url }}">Wuhan</button>
+            </div>
+          </div>
+          <img id="forewind-demo-image" src="{{ '/images/forewind/shanghai-model-comparison.gif' | relative_url }}" alt="Animated ForeWind model comparison for Shanghai" loading="lazy" decoding="async">
+          <figcaption>Animated comparison of persistence and deep-learning baselines against ERA5 ground truth.</figcaption>
+        </figure>
+      </section>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+      <section class="research-theme">
+        <header class="research-theme__header">
+          <h3>Robot Perception &amp; Computer Vision</h3>
+          <p>Robust visual understanding across sensing modalities, domains, and real-world operating conditions.</p>
+        </header>
+        <div class="research-theme__projects">
+          <article class="research-project">
+            <h4>Unified Segmentation for Movies &amp; Cartoons</h4>
+            <p>Developing a unified segmentation tool that reconciles different model interfaces, reduces the domain gap between real footage and animation, and supports intuitive semi-automatic annotation.</p>
+            <p class="research-methods"><strong>Methods:</strong> segmentation, domain adaptation, Python.</p>
+            <figure class="segmentation-demo">
+              <a class="segmentation-demo__pipeline" href="{{ '/images/research/segmentation/unified-segmentation-pipeline.png' | relative_url }}" aria-label="Open the unified segmentation pipeline at full size">
+                <img src="{{ '/images/research/segmentation/unified-segmentation-pipeline.png' | relative_url }}" alt="Unified segmentation pipeline connecting SAM3, RTMPose, RAFT, manual checking, and final outputs" loading="lazy" decoding="async">
+              </a>
+              <div class="segmentation-demo__examples">
+                <a href="{{ '/images/research/segmentation/cartoon-pose-example-cropped.png' | relative_url }}" aria-label="Open the cartoon character annotation example at full size">
+                  <img src="{{ '/images/research/segmentation/cartoon-pose-example-cropped.png' | relative_url }}" alt="Pose annotations over characters in a cartoon illustration" loading="lazy" decoding="async">
+                </a>
+                <a href="{{ '/images/research/segmentation/video-frame-pose-example-cropped.png' | relative_url }}" aria-label="Open the animated video-frame annotation example at full size">
+                  <img src="{{ '/images/research/segmentation/video-frame-pose-example-cropped.png' | relative_url }}" alt="Pose annotations over characters in an animated video frame" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <figcaption>Unified annotation pipeline with representative character-level pose results on illustrations and animated video frames.</figcaption>
+            </figure>
+          </article>
+          <article class="research-project">
+            <h4>Deep Multimodal Object Detection</h4>
+            <p>Designed spatial-mask interaction and channel-competition mechanisms for robust RGB-thermal object detection under sensor misalignment and adverse conditions.</p>
+            <p class="research-methods"><strong>Result:</strong> accepted at BMVC 2026 · <a href="https://arxiv.org/abs/2608.02092">arXiv</a>. <strong>Methods:</strong> RGB-thermal sensing, multimodal learning, PyTorch.</p>
+          </article>
+        </div>
+        <figure class="research-demo research-demo--bmvc">
+          <a href="{{ '/images/research/deep-multimodal-object-detection.png' | relative_url }}" aria-label="Open the Deep Multimodal Object Detection architecture at full size">
+            <img src="{{ '/images/research/deep-multimodal-object-detection.png' | relative_url }}" alt="Architecture of the Deep Multimodal Object Detection model with spatial mask interaction and channel competition" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Deep Multimodal Object Detection via spatial mask interaction and channel competition. Select the figure to view it at full size.</figcaption>
+        </figure>
+      </section>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+      <section class="research-theme">
+        <header class="research-theme__header">
+          <h3>Robotics &amp; Embodied AI</h3>
+          <p>Connecting perception, interaction, and physical reasoning for intelligent robots in unstructured environments.</p>
+        </header>
+        <div class="research-theme__projects">
+          <article class="research-project">
+            <h4>VR-based R1 Robot Teleoperation</h4>
+            <p>Contributing to a confidential teleoperation project involving C programming within the VR stack, <a href="https://www.yarp.it/">YARP</a> middleware, and LeRobot.</p>
+            <p class="research-methods"><strong>Methods:</strong> VR, YARP, LeRobot.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+  <section class="profile-section" id="publication">
+    <div class="profile-section__heading">
+      <h2>Publication</h2>
+    </div>
+    <article class="publication-card">
+      <div class="publication-card__year">2026</div>
+      <div>
+        <h3>Deep Multimodal Object Detection via Spatial Mask Interaction and Channel Competition</h3>
+        <p><strong>British Machine Vision Conference (BMVC 2026)</strong> · Accepted · <a href="https://arxiv.org/abs/2608.02092">arXiv</a></p>
+      </div>
+    </article>
+  </section>
+</div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const demo = document.querySelector(".forewind-demo");
+    if (!demo) return;
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+    const image = demo.querySelector("#forewind-demo-image");
+    const buttons = demo.querySelectorAll(".forewind-demo__controls button");
 
-**Markdown generator**
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        image.src = button.dataset.src;
+        image.alt = "Animated ForeWind model comparison for " + button.dataset.city;
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+        buttons.forEach(function (item) {
+          const isActive = item === button;
+          item.classList.toggle("is-active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+      });
+    });
+  });
+</script>

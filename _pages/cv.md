@@ -9,56 +9,54 @@ redirect_from:
 
 {% include base_path %}
 
+[Download PDF CV](/files/Guandi_Wang_CV.pdf){: .btn .btn--primary}
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **KTH Royal Institute of Technology**, Stockholm, Sweden  
+  M.Sc. in ICT Innovation: Autonomous Systems and Intelligent Robots, Aug. 2025 - Present
+  - Selected coursework: Machine Learning, Distributed Artificial Intelligence, Robotics, Hybrid and Embedded Control.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **Xi'an University of Architecture and Technology**, Shaanxi, China  
+  B.Sc. in Building Electrical and Intelligence, Sep. 2021 - July 2025
+  - GPA: 83.5/100, Top 10%
+  - Technical focus: Control Theory, Power Engineering, Building Environment, Embedded Systems.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
+**Spatio-Temporal Weather Analysis and Forecast**  
+Research Project, Sep. 2025 - Present
+
+- Developing a high-resolution meteorological benchmark using ERA5 reanalysis data, with a focus on wind speed forecasting in Southeast China's coastal zones.
+- Designed a data pipeline for large-scale grid meteorological data and complex spatio-temporal dependencies.
+- Evaluating deep learning baselines on High-Performance Computing clusters using Slurm, with attention to computational efficiency.
+
+**Robust Multimodal Object Detection via Spatial Feature Rectification**  
+Research Project, Jun. 2025 - Dec. 2025
+
+- Proposed a scale-modality decoupled interaction module to separate scale-invariant patterns from modality-specific RGB and thermal features.
+- Developed feature-space augmentation with attention-guided convex combinations to synthesize hard examples and improve robustness.
+- Conducted experiments on standard benchmarks to evaluate performance under sensor misalignment.
+
+**Autonomous Mobile Robot Navigation System**  
+Coursework, Sep. 2025 - Dec. 2025
+
+- Architected a TurtleBot3 navigation stack using ROS2 and Python.
+- Migrated control logic from finite state machines to behavior trees for improved reactivity.
+- Integrated AMCL localization and tuned PID controllers for smooth trajectory tracking.
+
+Technical Skills
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+
+- **Languages:** Python, C/C++, MATLAB, LaTeX
+- **Frameworks and Libraries:** PyTorch, ROS2 (Foxy/Humble), OpenCV, Scikit-learn, Slurm (HPC)
+- **Tools and Platforms:** Linux (Ubuntu), Git, Docker, Gazebo
+
+Selected Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+- **Grand Prize**, Undergraduate Graduation Project Competition, Shaanxi Automation Association, 2025
+- **Outstanding Graduate**, Xi'an University of Architecture and Technology, 2025
+- **Academic Scholarship, Class II**, awarded for 3 consecutive years, 2021 - 2023
