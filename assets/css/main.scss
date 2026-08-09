@@ -233,16 +233,15 @@ html {
 
 .segmentation-demo {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
   gap: 0.28rem;
-  align-items: stretch;
+  align-items: start;
   max-width: 72%;
   margin: 0.8rem auto 0.15rem;
 }
 
 .segmentation-demo a {
-  display: flex;
-  align-items: center;
+  display: block;
   overflow: hidden;
   border: 1px solid var(--global-border-color);
   background: #fff;
@@ -254,26 +253,11 @@ html {
   height: auto;
 }
 
-.segmentation-demo__pipeline {
-  height: 100%;
-}
-
-.segmentation-demo__pipeline img {
-  height: 100%;
-  object-fit: contain;
-}
-
 .segmentation-demo__examples {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 0.28rem;
   margin-top: 0;
-}
-
-.segmentation-demo__examples img {
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
 }
 
 .segmentation-demo figcaption {
