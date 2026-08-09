@@ -62,6 +62,12 @@ redirect_from:
             <p class="research-methods"><strong>Methods:</strong> ERA5, spatio-temporal learning, forecasting, Slurm.</p>
           </article>
         </div>
+        <figure class="research-demo research-demo--forewind">
+          <a href="{{ '/images/research/forewind-framework.png' | relative_url }}" aria-label="Open the ForeWind research framework at full size">
+            <img src="{{ '/images/research/forewind-framework.png' | relative_url }}" alt="ForeWind framework for physically informed regime identification, controlled benchmark construction, and multi-view physical evaluation" loading="lazy" decoding="async">
+          </a>
+          <figcaption>ForeWind framework for regime-aware benchmark construction, model evaluation, and physical diagnosis.</figcaption>
+        </figure>
         <figure class="forewind-demo" aria-labelledby="forewind-demo-title">
           <div class="forewind-demo__header">
             <div>
