@@ -1,4 +1,4 @@
-\documentclass[10pt, letterpaper]{article}
+\documentclass[11pt, letterpaper]{article}
 % Packages
 \usepackage[
     ignoreheadfoot,
@@ -8,13 +8,17 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{needspace}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{fontawesome5}
+\hypersetup{hidelinks}
 % Colors & Fonts
 \definecolor{primaryColor}{RGB}{0, 0, 0} % Black for objectivity
 \urlstyle{same}
 % Formatting
 \pagestyle{empty}
+\raggedbottom
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0in}
 % Section formatting
@@ -29,16 +33,17 @@
 }
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}[t]{@{\extracolsep{\fill}}lr@{}}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
+    \Needspace{4\baselineskip}
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xr@{}}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabularx}\vspace{-5pt}
 }
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -61,7 +66,7 @@
   \resumeSubheading
     {KTH Royal Institute of Technology}{Stockholm, Sweden}
     {M.Sc. in ICT Innovation: Autonomous Systems and Intelligent Robots}{Aug. 2025 -- Present}
-    \resumeItem{Selected Coursework: Machine Learning, Distributed Artificial Intelligence, Introduction to Robotics, Hybrid and Embedd Control System.}
+    \resumeItem{Selected Coursework: Machine Learning, Distributed Artificial Intelligence, Introduction to Robotics, Hybrid and Embedded Control Systems.}
   \resumeSubheading
     {Xi'an University of Architecture and Technology}{Shaanxi, China}
     {B.Sc. in Building Electrical and Intelligence}{Sep. 2021 -- July 2025}
@@ -70,20 +75,55 @@
 %-----------RESEARCH EXPERIENCE-----------
 \section{Research Experience}
   \begin{itemize}[leftmargin=0.15in, label={}]
+    % --- Tekniska Mekanik, KTH ---
+    \resumeSubheading
+      {Research Intern}{Sep. 2025 -- Present}
+      {Tekniska Mekanik, KTH Royal Institute of Technology}{Supervisor: Junle Liu}
+    \resumeProjectHeading
+      {\textbf{ForeWind: Physics-Informed Spatiotemporal Wind Flow Forecasting}}{}
+      \resumeItem{Constructed a 26-year hourly ERA5 benchmark (1999--2024) for wind forecasting over heterogeneous terrain. Built a physics-informed feature space from mean wind flow, wind variability, diurnal temperature range, elevation, and terrain roughness; used a Self-Organizing Map to identify nine wind regimes and select 12 representative coastal, inland, and plateau cities.}
+      \resumeItem{Developed a unified data and training pipeline for eight deep-learning architectures on city-centered $64 \times 64$ patches under a 24-hour input-to-24-hour forecast protocol, yielding 96 city--model configurations on Slurm-based HPC systems. Evaluated city RMSE, temporal correlation, patch-scale anomaly correlation, and persistence-normalized skill.}
+      \resumeItem{Showed that lower-boundary setting governs attainable error scale while architecture controls regime-specific failure modes. Two-way fixed-effect decomposition attributed most RMSE variability to city setting and persistence-normalized skill to city--model interaction; grid-level skill maps, lead-dependent errors, and power spectral density analysis exposed coherent variance attenuation across coastal and plateau regimes. \href{https://github.com/LIUJUNLE97/forewind}{Code and data}.}
+
+    \resumeProjectHeading
+      {\textbf{Physics-Constrained Generative Reconstruction of Incompressible Flows}}{}
+      \resumeItem{Investigating how generative flow-reconstruction models can strictly satisfy incompressibility through divergence-free constraints while preserving high reconstruction accuracy and calibrated uncertainty quantification.}
+      \resumeItem{Combining Gaussian Splatting with diffusion models to generate physically consistent flow fields on datasets including the Johns Hopkins Turbulence Database (JHTDB) and Taylor--Green vortex (TGV) benchmarks.}
+
+    \resumeProjectHeading
+      {\textbf{CFD-Informed Reinforcement Learning Environments for UAVs}}{}
+      \resumeItem{Building two Isaac Lab UAV simulation environments from CFD data: a time-varying wind-field scenario based on JHTDB and a built-environment scenario driven by CFD flow around a Y-shaped building.}
+      \resumeItem{Designed the simulation lab for HPC execution and integrated ParaView with ROS2 to support real-time visualization and video streaming of large-scale aerodynamic environments.}
+
+    \resumeProjectHeading
+      {\textbf{GPU-Accelerated OpenFOAM Deployment on HPC}}{}
+      \resumeItem{Deploying and validating GPU-enabled OpenFOAM workflows on supercomputing infrastructure for scalable CFD simulation and downstream learning tasks.}
+
+  \end{itemize}
+\newpage
+\section{Research Experience (Continued)}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+      {\textbf{Deep Multimodal Object Detection} $|$ \emph{Collaboration with Junle Liu}}{}
+      \resumeItem{Developed spatial-mask interaction and channel-competition mechanisms for robust RGB--thermal object detection under sensor misalignment and adverse conditions, with an emphasis on deployable multimodal perception for real robotic systems. Accepted to BMVC 2026.}
+
     % --- IIT Guest Student ---
+    \resumeSubheading
+      {Humanoid Sensing and Perception Guest Student}{June 2026 -- Sep. 2026}
+      {Istituto Italiano di Tecnologia (IIT)}{Supervisor: Maria Lombardi; PI: Lorenzo Natale}
     \resumeProjectHeading
-      {\textbf{Humanoid Sensing and Perception Guest Student} | Istituto Italiano di Tecnologia (IIT)}{June 2026 -- Present}
-      \resumeItem{\textbf{Supervisor:} Maria Lombardi \quad \textbf{PI:} Lorenzo Natale}
-      \resumeItem{\textbf{Unified Object Segmentation for Movies and Cartoons:} Developing a segmentation tool that unifies algorithms with heterogeneous input/output paradigms while addressing the domain gap between real footage and animated imagery.}
-      \resumeItem{Designing an intuitive, semi-automatic annotation workflow to make segmentation practical for non-specialists and robust across real movies and cartoons.}
-      \resumeItem{\textbf{R1 Humanoid Robot Teleoperation:} Contributing to a confidential VR-based teleoperation project involving C programming within the VR stack, YARP middleware, and LeRobot.}
-    % --- Tekniska Mekanik ---
+      {\textbf{Unified Visual Segmentation and Annotation Tool}}{}
+      \resumeItem{Developed a visual segmentation and annotation tool using SAM3.1 as the foundation model and integrating RTMPose and RAFT for pose-aware annotation and optical-flow propagation.}
+      \resumeItem{Supported precise frame-by-frame annotation, automatic object tracking across video sequences, and manual correction for both live-action movies and animated content.}
+
     \resumeProjectHeading
-      {\textbf{Research Intern} | Tekniska Mekanik, KTH Royal Institute of Technology}{Jun. 2025 -- Apr. 2026}
-      \resumeItem{Developed a high-resolution meteorological benchmark and data pipeline from ERA5 reanalysis data for spatio-temporal wind-speed forecasting on large grid datasets.}
-      \resumeItem{Evaluated deep-learning baselines on HPC clusters using Slurm, addressing long-range spatio-temporal dependencies and computational efficiency.}
-      \resumeItem{Fluid Reconstruction based on generative artificial intelligence.}
- 
+      {\textbf{Force-Aware Physical Interaction with the R1 Humanoid Robot}}{}
+      \resumeItem{Developed a teleoperation-based physical interaction setup in which a human and the R1 humanoid robot jointly grasp an interaction-force sensor, enabling synchronized motion and force exchange for studying human--robot mechanical interaction.}
+
+  \end{itemize}
+%-----------SELECTED PROJECTS-----------
+\section{Selected Projects}
+  \begin{itemize}[leftmargin=0.15in, label={}]
     % --- Project 3: ROS2 Navigation (KTH Coursework) ---
     \resumeProjectHeading
       {\textbf{Autonomous Mobile Robot Navigation System} (Coursework) }{Sep. 2025 -- Dec. 2025}
@@ -100,15 +140,15 @@
 %-----------PUBLICATIONS-----------
 \section{Publications}
   \begin{itemize}[leftmargin=0.15in, label={}]
-    \resumeItem{\textbf{Deep Multimodal Object Detection via Spatial Mask Interaction and Channel Competition.} Accepted to BMVC 2026.}
+    \resumeItem{\textbf{Deep Multimodal Object Detection via Spatial Mask Interaction and Channel Competition.} Accepted to BMVC 2026. \href{https://arxiv.org/abs/2608.02092}{arXiv:2608.02092}.}
   \end{itemize}
 %-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python , C/C++, MATLAB, LaTeX} \\
-     \textbf{Frameworks \& Libraries}{: PyTorch, ROS2 (Foxy/Humble), OpenCV, Scikit-learn, YARP, LeRobot} \\
-     \textbf{Tools \& Platforms}{: Linux (Ubuntu), Git, Docker, Gazebo, Slurm (HPC), VR systems} \\
+     \textbf{Languages}{: Python, C/C++, MATLAB, LaTeX} \\
+     \textbf{Frameworks \& Libraries}{: PyTorch, ROS2 (Foxy/Humble), OpenCV, Scikit-learn, Isaac Lab, YARP, LeRobot} \\
+     \textbf{Tools \& Platforms}{: Linux (Ubuntu), Git, Docker, Gazebo, Slurm (HPC), OpenFOAM, ParaView, VR systems}
   
     }}
  \end{itemize}
